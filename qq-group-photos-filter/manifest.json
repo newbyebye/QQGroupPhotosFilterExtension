@@ -3,11 +3,10 @@
 
     "name": "QQ群筛选图片插件",
     "description": "先进入某个相册，然后输入QQ号筛选图片",
-    "version": "1.0.0",
+    "version": "1.0.1",
 
     "permissions": [
-        "http://qun.qzone.qq.com/*",
-        "http://u.photo.qzone.qq.com/*",
+        "http://*.qzone.qq.com/",
         "webRequestBlocking",
         "webRequest"
     ],

@@ -44,10 +44,10 @@ chrome.extension.onRequest.addListener(
  */
 chrome.webRequest.onBeforeRequest.addListener(
     function(request) {
-        var url = request.url.replace("num=36", "num=999");
+        var url = request.url.replace(/num=\d+/, "num=999");
         return {redirectUrl: url};
     },
-    {urls: ["http://u.photo.qzone.qq.com/*qun_list_photo_v2*"]},
+    {urls: ["http://*.qzone.qq.com/*qun_list_photo_v2*"]},
     ['blocking']
 );
 
